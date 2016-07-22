@@ -1,0 +1,49 @@
+body {
+	font-family: sans-serif;
+	margin:50px;
+	background-color: #f0f0f0;
+}
+
+/* In IFRAME document */
+
+body#iframe {
+	margin:0;
+	background-color: white;
+}
+
+#iframe-container, #iframe-container iframe {
+	width: 500px;
+	height:500px;
+}
+
+#overlay {
+	display: none;
+	position: fixed;
+	top: 0;
+	right:0;
+	bottom:0;
+	left: 0;
+	background-color: rgba(0,0,0,.8);
+	z-index: 10;
+}
+
+#overlay > div {
+	position: absolute;
+	right: 10px;
+	bottom: 10px;
+	width: 30px;
+	height: 30px;
+	background-color: white;
+}
+
+#wrap {
+	position: fixed;
+	top: 0;
+	right:0;
+	bottom:0;
+	left: 0;
+	padding: 50px;
+	overflow-y: scroll;
+  	-webkit-overflow-scrolling: touch;
+	box-sizing: border-box;
+}
