@@ -20,7 +20,7 @@ So now you have a `<div>` which you can scroll with *momentum* and all, but **th
 
 The problem with this is that you can't center UI elements on the screen like modals, or use `position:fixed;`for say a top menu bar. Remember that the `<iframe>` itself never scrolls, you are scrolling the container. This means a fixed element will remained fixed inside the `<iframe>` but not the container which is what you are scrolling.
 
-You may think that you should be able to solve this using Javascript but you can't. Again, you can't know the position of the scroll since the `<iframe>` never scrolls and you have no way of positioning your UI elements depending on the scroll position. So you effectively have no way of knowing where the center or top positions are.
+You may think that you should be able to solve this using Javascript but you can't. Again, you can't know the position of the scroll since the `<iframe>` never scrolls and you have no way of positioning your UI elements depending on the scroll position. So you effectively have no way of knowing where the center or top positions are (relatively speaking).
 
 ###Solution
 After messing with this for a few hours the solution for my case was to to wrap all the content of the `<iframe>` and use this CSS on the wrapper:
