@@ -38,15 +38,15 @@ After messing with this for a few hours the solution for my case was to to wrap 
 }
 ```
 
-This way you can set the dimensions of the `<iframe>` since Safari will believe the content has no dimensions. Now `position:fixed;` and `position:absolute;` will work as expected. I have not fiddled much with Javascript but it should be easy to get real coordinates.
+This way you can set the dimensions of the `<iframe>` since Safari will believe the content has no dimensions. Now `position:fixed;` and `position:absolute;` will work as expected. I have not fiddled much with Javascript on this particular problem, but it should be easy to get real coordinates.
 
-The downside of this approach is that you need to be able to control the HTML that is loaded in the `<iframe>`. If you need absolute positions
+The downside of this approach is that you need to be able to control the HTML that is loaded in the `<iframe>`.
 
 [You can see the quick and dirty demo here.](http://www.pierbover.com/pub/safari-iframe-fix/)
 
-Tap on the `lorem ipsum` text to show an overlay that works as expected and occupies the whole viewport. There's a small white square that prooves where the overlay ends. As a bonus the code also shows how to block scroll on the underlying content while the overlay is shown.
+Tap on the `lorem ipsum` text to show an overlay that works as expected and occupies the whole viewport. There's a small white square that proves where the overlay ends. As a bonus the code also shows how to block scroll on the underlying content while the overlay is shown.
 
-<img src="proof.png"/>
+<img src="proof.png" width="400"/>
 
 So now you can show Safari the finger.
 
